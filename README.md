@@ -46,6 +46,7 @@ The scores for each model are as follows:
 * Initial Model: 1.81082
 * Model with Added Features: 1.32046
 * Model with Hyperparameter Optimization: 1.13667
+
 As seen from the plot, there is a clear improvement in the scores as new features are added and hyperparameter optimization is performed.
 
 ## Hyperparameter Tuning
