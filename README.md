@@ -22,13 +22,13 @@ The project uses the "Bike Sharing Demand" dataset from Kaggle. The dataset cont
 ## Training a Model
 To train the model using AutoGluon's Tabular Prediction, follow the steps below:
 
-Load the training data from the train.csv file and preprocess it.
-Set the label to be predicted as "count" and drop unnecessary columns.
-Define the evaluation metric as the root mean squared error (RMSE).
-Use the best_quality preset to focus on creating the best model.
-Train the model using AutoGluon with a time limit of 10 minutes.
-Evaluate the model's performance.
-It leverages AutoGluon's powerful framework to handle data preprocessing, feature engineering, model selection, and hyperparameter optimization.
+* Load the training data from the train.csv file and preprocess it.
+* Set the label to be predicted as "count" and drop unnecessary columns.
+* Define the evaluation metric as the root mean squared error (RMSE).
+* Use the best_quality preset to focus on creating the best model.
+* Train the model using AutoGluon with a time limit of 10 minutes.
+* Evaluate the model's performance.
+* It leverages AutoGluon's powerful framework to handle data preprocessing, feature engineering, model selection, and hyperparameter optimization.
 
 The model's performance is evaluated using the RMSE metric, which measures the difference between the predicted and actual rental counts. The lower the RMSE, the better the model's performance.
 
