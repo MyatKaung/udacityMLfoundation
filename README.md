@@ -37,6 +37,7 @@ The trained model achieves a root mean squared error (RMSE) score of approximate
 
 ## Kaggle Score Improvement
 A line plot has been created to visualize the improvement in Kaggle scores:
+<img src="model_test_score.png" alt="model_test_score.png" width="500"/>
 
 ## Model Test Score
 
