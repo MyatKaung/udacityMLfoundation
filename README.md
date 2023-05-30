@@ -17,14 +17,14 @@ To get started with this project, follow the steps below:
 !pip install -U "mxnet<2.0.0" bokeh==2.0.1
 !pip install autogluon --no-cache-dir
 
-## Dataset
+Dataset
 
 The project uses the "Bike Sharing Demand" dataset from Kaggle. The dataset contains hourly rental data spanning two years and includes features such as date, season, temperature, humidity, and more. You can download the dataset by running the following command:
 
 ```bash
 !kaggle competitions download -c bike-sharing-demand
 
-## Training a Model
+Training a Model
 
 To train the model using AutoGluon's Tabular Prediction, follow the steps below:
 
@@ -39,11 +39,11 @@ It leverages AutoGluon's powerful framework to handle data preprocessing, featur
 
 The model's performance is evaluated using the RMSE metric, which measures the difference between the predicted and actual rental counts. The lower the RMSE, the better the model's performance.
 
-## Results
+Results
 
 The trained model achieves a root mean squared error (RMSE) score of approximately 1.81082 on the initial validation data. After adding new features, the model's performance improves to a score of 1.32046. Further hyperparameter optimization results in an even better score of 1.13667.
 
-### Kaggle Score Improvement
+Kaggle Score Improvement
 
 A line plot has been created to visualize the improvement in Kaggle scores:
 
@@ -57,7 +57,7 @@ The scores for each model are as follows:
 
 As seen from the plot, there is a clear improvement in the scores as new features are added and hyperparameter optimization is performed.
 
-### Hyperparameter Tuning
+Hyperparameter Tuning
 
 Hyperparameter tuning was performed to further improve the model's performance. The following hyperparameters were chosen:
 
@@ -67,12 +67,12 @@ Hyperparameter tuning was performed to further improve the model's performance. 
 
 These hyperparameters were selected based on experimentation and domain knowledge. By allowing the model to use the original features, leveraging a larger number of base models, and limiting the number of base models per type, we aimed to enhance the model's flexibility and capture more complex patterns in the data.
 
-### Best Model
+Best Model
 
 The best model achieved an RMSE score of 1.13667. It is an ensemble model called "WeightedEnsemble_L2," which combines the predictions of multiple base models to make the final predictions. Ensembling helps to reduce overfitting and improve generalization performance.
 
 
-## License
+License
 
 This project is licensed under the [MIT License](LICENSE.txt).
 
